@@ -2,8 +2,8 @@ public class Avo extends Pessoa
 {
     private int Idade;
 
-    public String getIdade(){
-        return "";
+    public int getIdade(){
+        return Idade;
     }
 
     public void setIdade(int Idade){
@@ -11,7 +11,7 @@ public class Avo extends Pessoa
     }
 
     @Override
-    public void getTipoVoz() {
-
+    public String getTipoVoz() {
+        return "Avô";
     }
 }

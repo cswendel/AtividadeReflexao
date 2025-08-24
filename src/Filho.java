@@ -9,4 +9,9 @@ public class Filho extends Pai
     public void setDataNascimento(String DataNascimento){
         this.DataNascimento = DataNascimento;
     }
+
+    @Override
+    public String getTipoVoz() {
+        return "Filho";
+    }
 }
