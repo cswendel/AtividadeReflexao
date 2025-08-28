@@ -11,12 +11,12 @@ public class Reflexao {
 
     private void ListarAtributosHierarquia(Class<?> cls) {
         while (cls != null && cls != Object.class) {
-            listarAtributosDaClasse(cls);
+            ListarAtributosDaClasse(cls);
             cls = cls.getSuperclass();
         }
     }
 
-    private void listarAtributosDaClasse(Class<?> cls) {
+    private void ListarAtributosDaClasse(Class<?> cls) {
         Field[] fields = cls.getDeclaredFields();
         if (fields.length > 0) {
             System.out.println("Atributos da classe " + cls.getName() + ":");
